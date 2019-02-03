@@ -9,6 +9,11 @@
   <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
   <link type="text/css" rel="stylesheet" href="css/main.css" />
 
+  <!-- ===== FIREBASE ===== -->
+  <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.4.0/firebase.js"></script>
+
+
   <!-- ===== WEBSITE/MOBILE OPTIMIZATION =====-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -68,24 +73,26 @@
         <div class="col s12 m6 offset-m6">
           <div class="card-panel z-depth-5">
             <h4>CONTACT US</h4>
-            <div class="input-field">
-              <input type="text" id="name" placeholder="Name:">
-              <label for="name">Name</label>
-            </div>
-            <div class="input-field">
-              <input type="email" id="email" placeholder="Email:">
-              <label for="email">Email</label>
-            </div>
-            <!-- ===== NEED TO WORK ON SUBJECT LINE -->
-            <!-- <div class="input-field">
+            <form action="">
+              <div class="input-field">
+                <input type="text" id="name" placeholder="Name:">
+                <label for="name">Name</label>
+              </div>
+              <div class="input-field">
+                <input type="email" id="email" placeholder="Email:">
+                <label for="email">Email</label>
+              </div>
+              <!-- ===== NEED TO WORK ON SUBJECT LINE -->
+              <!-- <div class="input-field">
               <input type="subject" id="subject" placeholder="Subject">
               <label for="subject">Subject:</label>
             </div> -->
-            <div class="input-field">
-              <textarea class="materialize-textarea" id="message" placeholder="Message"></textarea>
-              <label for="message">Message</label>
-            </div>
-            <input type="submit" value="Submit" class="btn blue-grey">
+              <div class="input-field">
+                <textarea class="materialize-textarea" id="message" placeholder="Message"></textarea>
+                <label for="message">Message</label>
+              </div>
+              <input type="submit" value="Submit" class="btn blue-grey submitButton">
+            </form>
           </div>
         </div>
       </div>
